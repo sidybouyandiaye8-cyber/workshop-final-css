@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearHUB — Plateforme d'apprentissage moderne</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <!-- 1. Bannière de notification (Toast) refermable -->
+  <div class="toast-notification" id="toastBanner">
+    <span>🎉 <strong>Offre Black Friday :</strong> -70% sur le parcours Python aujourd'hui !</span>
+    <button type="button" class="toast-close" onclick="document.getElementById('toastBanner').style.display='none'" aria-label="Fermer">&times;</button>
+  </div>
+
+  <!-- 2. Navbar Sticky avec effet Glassmorphism -->
+  <header class="navbar">
+    <a href="#top" class="logo">Lear<span>HUB</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#courses">Formations</a></li>
+        <li><a href="#nouveautes">IA Générative</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <a href="#login" class="btn-login">Connexion</a>
+  </header>
+
+  <!-- 3. Section Cours Tendances + Sidebar Sticky -->
+  <section class="courses" id="courses">
+    <div class="section-header">
+      <span class="section-tag">Catalogue 2026</span>
+      <h2>Nos Cours Tendances</h2>
+      <p>Développez des compétences concrètes avec des projets guidés par des experts.</p>
+    </div>
+
+    <div class="courses-layout">
+      <!-- Grille des 3 cours -->
+      <div class="course-container">
+        <article class="course-card web">
+          <span class="badge badge-popular">Populaire</span>
+          <div class="card-icon">🌐</div>
+          <h3>HTML & CSS Moderne</h3>
+          <p class="card-desc">Maîtrisez Flexbox, CSS Grid et le Responsive Design de zéro.</p>
+          <div class="card-meta">
+            <span>⭐ 4.9 (320 avis)</span>
+            <span>⏱ 12h</span>
+          </div>
+          <button type="button" class="btn-card">Découvrir le cours</button>
+        </article>
+
+        <article class="course-card js">
+          <span class="badge badge-new">Nouveau</span>
+          <div class="card-icon">⚡</div>
+          <h3>JavaScript ES6+</h3>
+          <p class="card-desc">Créez des interfaces dynamiques, interactives et performantes.</p>
+          <div class="card-meta">
+            <span>⭐ 4.8 (215 avis)</span>
+            <span>⏱ 18h</span>
+          </div>
+          <button type="button" class="btn-card">Découvrir le cours</button>
+        </article>
+
+        <article class="course-card py">
+          <div class="ribbon">-40%</div>
+          <div class="card-icon">🐍</div>
+          <h3>Python & Data</h3>
+          <p class="card-desc">Automatisez vos tâches et initiez-vous à la science des données.</p>
+          <div class="card-meta">
+            <span>⭐ 4.9 (474 avis)</span>
+            <span>⏱ 22h</span>
+          </div>
+          <button type="button" class="btn-card">Découvrir le cours</button>
+        </article>
+      </div>
+
+      <!-- Sidebar d'outils collante -->
+      <aside class="sticky-sidebar">
+        <h4>Sommaire & Outils</h4>
+        <ul>
+          <li><a href="#courses">📚 Nos Formations</a></li>
+          <li><a href="#nouveautes">🤖 Spécial IA</a></li>
+          <li><a href="#about">💡 Pourquoi nous ?</a></li>
+          <li><a href="#faq">❓ Questions fréquentes</a></li>
+        </ul>
+        <button type="button" class="btn-share" id="shareBtn">🔗 Partager la page</button>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 4. Section Nouveautés IA & Bento Grid -->
+  <section class="nouveautes-wrapper" id="nouveautes">
+    <div class="nouveautes">
+      <div class="IA-container">
+        <article class="IA">
+          <span class="badge-ia">✨ Nouveauté</span>
+          <h3>Propulsez votre carrière avec l'IA Générative</h3>
+          <p>Pérennisez vos compétences avec l'Abonnement individuel. Accédez en illimité à des ateliers pratiques conçus par des formateurs reconnus.</p>
+
+          <ul class="ul">
+            <li><span class="icon purple">✦</span> Maîtriser les prompts et l'IA</li>
+            <li><span class="icon green">🏆</span> Préparer une certification</li>
+            <li><span class="icon yellow">💬</span> Coaching IA personnalisé</li>
+            <li><span class="icon cyan">💡</span> Projets concrets en entreprise</li>
+          </ul>
+
+          <div class="cta-group">
+            <a href="#" class="btn-IA">Commencer l'essai gratuit</a>
+            <span class="price-note">À partir de <strong>10,00 $US</strong>/mois</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="bento-grid">
+        <div class="grid-item item-1">
+          <img src="forme-bleue.jpg" alt="Forme 3D abstraite">
+        </div>
+        <div class="grid-item item-2">
+          <img src="formateur.jpg" alt="Formateur">
+        </div>
+        <div class="grid-item item-3">
+          <img src="etoile-3d.jpg" alt="Icône IA">
+        </div>
+        <div class="grid-item item-4">
+          <img src="casque-vr.jpg" alt="Casque VR">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Sections À propos & FAQ -->
+  <section class="extra-content" id="about">
+    <div class="info-box">
+      <h2>Pourquoi apprendre avec LearHUB ?</h2>
+      <p>Une pédagogie orientée pratique, un suivi personnalisé et une communauté active pour vous accompagner à chaque étape.</p>
+    </div>
+  </section>
+
+  <section class="extra-content bg-alt" id="faq">
+    <div class="info-box">
+      <h2>Questions Fréquentes</h2>
+      <p>Accès à vie aux vidéos, certificats de réussite téléchargeables et remboursement garanti sous 30 jours.</p>
+    </div>
+  </section>
+
+  <!-- 6. Bouton Retour en haut & Chatbot -->
+  <a href="#top" class="btn-top">↑ Haut de page</a>
+
+  <div class="chatbot-wrapper">
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-header">
+        <span>🤖 Assistant LearHUB</span>
+        <button type="button" id="closeChat" aria-label="Fermer">&times;</button>
+      </div>
+      <div class="chat-messages" id="chatMessages">
+        <div class="message bot-message">
+          Bonjour ! 👋 Comment puis-je vous aider concernant nos formations (HTML, JS, Python ou IA) ?
+        </div>
+      </div>
+      <form class="chat-input-area" id="chatForm">
+        <input type="text" id="chatInput" placeholder="Posez votre question..." autocomplete="off" required>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+
+    <button type="button" class="btn-support" id="toggleChat">💬 Besoin d'aide ?</button>
+  </div>
+
+  <!-- Script léger pour rendre le chatbot et le partage fonctionnels -->
+  <script>
+    const toggleChat = document.getElementById('toggleChat');
+    const closeChat = document.getElementById('closeChat');
+    const chatWindow = document.getElementById('chatWindow');
+    const chatForm = document.getElementById('chatForm');
+    const chatInput = document.getElementById('chatInput');
+    const chatMessages = document.getElementById('chatMessages');
+    const shareBtn = document.getElementById('shareBtn');
+
+    toggleChat.addEventListener('click', () => {
+      chatWindow.style.display = chatWindow.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    closeChat.addEventListener('click', () => {
+      chatWindow.style.display = 'none';
+    });
+
+    chatForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const text = chatInput.value.trim();
+      if (!text) return;
+
+      chatMessages.innerHTML += `<div class="message user-message">${text}</div>`;
+      chatInput.value = '';
+      setTimeout(() => {
+        chatMessages.innerHTML += `<div class="message bot-message">Merci pour votre message ! Un conseiller vous répondra sous peu.</div>`;
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }, 500);
+    });
+
+    if (shareBtn) {
+      shareBtn.addEventListener('click', () => {
+        navigator.clipboard?.writeText(window.location.href);
+        shareBtn.textContent = '✅ Lien copié !';
+        setTimeout(() => {
+          shareBtn.textContent = '🔗 Partager la page';
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
